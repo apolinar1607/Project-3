@@ -66,7 +66,7 @@ const NewPlace = () => {
           type="text"
           label="Customer"
           validators={[VALIDATOR_REQUIRE()]}
-          errorText="Please enter a valid title."
+          errorText="Please enter a valid customer."
           onInput={inputHandler}
         />
         <Input
@@ -74,7 +74,7 @@ const NewPlace = () => {
           element="textarea"
           label="Description"
           validators={[VALIDATOR_MINLENGTH(5)]}
-          errorText="Please enter a valid description (at least 5 characters)."
+          errorText="Please enter a valid job description (at least 5 characters)."
           onInput={inputHandler}
         />
         <Input
@@ -82,7 +82,7 @@ const NewPlace = () => {
           element="input"
           label="Address"
           validators={[VALIDATOR_REQUIRE()]}
-          errorText="Please enter a valid address."
+          errorText="Please enter a valid customer address."
           onInput={inputHandler}
         />
         <Button type="submit" disabled={!formState.isValid}>

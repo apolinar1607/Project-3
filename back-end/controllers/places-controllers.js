@@ -16,14 +16,14 @@ const getPlaceById = async (req, res, next) => {
     place = await Place.findById(placeId);
   } catch (err) {
     const error = new HttpError(
-      "Something went wrong, could not find a place",
+      "Something went wrong, could not find a job",
       500
     );
     return next(error);
   }
   if (!place) {
     const error = new HttpError(
-      "Could not find a place for the provided id.",
+      "Could not find a job for the provided id.",
       404
     );
     return next(error);
@@ -39,16 +39,16 @@ const getPlacesByUserId = async (req, res, next) => {
     places = await Place.find({ creator: userId });
   } catch (err) {
     const error = new HttpError(
-      "Fetching places failed, please try again",
+      "Fetching jobs failed, please try again",
       500
     );
     return next(error);
   }
   if (!places || places.length === 0) {
-    const error = new Error("Could not find a place for the provided user id.");
+    const error = new Error("Could not find a job for the provided user id.");
     error.code = 404;
     return next(
-      new HttpError("Could not find places for the provided user id.", 404)
+      new HttpError("Could not find jobs for the provided user id.", 404)
     );
   }
   res.json({
@@ -113,7 +113,7 @@ const createPlace = async (req, res, next) => {
     return next(error);
   }
 
-  res.status(201).json({ place: createdPlace }); //
+  res.status(201).json({ place: createdPlace }); 
 };
 
 const updatePlace = async (req, res, next) => {

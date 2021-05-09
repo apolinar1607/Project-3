@@ -123,7 +123,7 @@ const UpdatePlace = () => {
             initialValid={true}
           />
           <Button type="submit" disabled={!formState.isValid}>
-            UPDATE PLACE
+            UPDATE JOB
           </Button>
         </form>
       )}
