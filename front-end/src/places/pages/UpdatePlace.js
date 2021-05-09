@@ -90,7 +90,7 @@ const UpdatePlace = () => {
     return (
       <div className="center">
         <Card>
-          <h2>Could not find place!</h2>
+          <h2>Could not find job!</h2>
         </Card>
       </div>
     );
@@ -107,7 +107,7 @@ const UpdatePlace = () => {
             type="text"
             label="Title"
             validators={[VALIDATOR_REQUIRE()]}
-            errorText="Please enter a valid title."
+            errorText="Please enter a valid custmer name."
             onInput={inputHandler}
             initialValue={loadedPlace.title}
             initialValid={true}
