@@ -1,0 +1,8 @@
+{
+  "env": {
+    "DB_USER": "amagtanong-project3",
+    "DB_PASSWORD": "monash123",
+    "DB_NAME": "project3Database",
+   "GOOGLE_API_KEY": "AIzaSyCbQeRhWZXg3v9Ohz5xmrWMYx1PO2bKkDA"
+  }
+}
