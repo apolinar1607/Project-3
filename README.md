@@ -1,4 +1,4 @@
-# Project-3 Job Trace
+# Project-3 - Job Trace
 
   ![](https://img.shields.io/badge/license-Apache-blue)
 
